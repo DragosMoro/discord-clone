@@ -29,7 +29,7 @@ const roleIconMap = {
   [MemberRole.ADMIN]: <ShieldAlert className="ml-2 h-4 w-4 text-rose-500" />,
 };
 
-const SeverSidebar = async ({ serverId }: ServerSidebarProps) => {
+const ServerSidebar = async ({ serverId }: ServerSidebarProps) => {
   const profile = await currentProfile();
   if (!profile) {
     return redirect("/");
@@ -201,4 +201,4 @@ const SeverSidebar = async ({ serverId }: ServerSidebarProps) => {
   );
 };
 
-export default SeverSidebar;
+export default ServerSidebar;
