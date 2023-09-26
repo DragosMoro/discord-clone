@@ -39,6 +39,7 @@ const ChannelIdPage = async ({ params }: ChannelIdPageProps) => {
         serverId={params.serverId}
         type="channel"
       />
+      <div>Future Messages</div>
     </div>
   );
 };
