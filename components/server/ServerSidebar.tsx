@@ -5,7 +5,6 @@ import { redirect } from "next/navigation";
 import ServerHeader from "./ServerHeader";
 import { ScrollArea } from "../ui/scroll-area";
 import { Hash, Mic, ShieldAlert, ShieldCheck, Video } from "lucide-react";
-import { channel } from "diagnostics_channel";
 import { ServerSearch } from "./ServerSearch";
 import { Separator } from "../ui/separator";
 import { ServerSection } from "./ServerSection";
