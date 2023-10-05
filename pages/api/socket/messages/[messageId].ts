@@ -80,7 +80,7 @@ export default async function handler(
       }
     })
 
-    if (!message || message.detelted) {
+    if (!message || message.deleted) {
       return res.status(404).json({ error: "Message not found" });
     }
 
@@ -101,7 +101,7 @@ export default async function handler(
         data: {
           fileUrl: null,
           content: "This message has been deleted.",
-          detelted: true,
+          deleted: true,
         },
         include: {
           member: {
