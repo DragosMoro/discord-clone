@@ -53,7 +53,13 @@ const ChatMessages = ({
     useChatQuery({ queryKey, apiUrl, paramKey, paramValue });
 
   useChatSocket({ queryKey, addKey, updateKey });
-  useChatScroll({ chatRef, bottomRef, loadMore: fetchNextPage, shouldLoadMore: !isFetchingNextPage && !!hasNextPage, count: data?.pages?.[0].items?.length ?? 0});
+  useChatScroll({
+    chatRef,
+    bottomRef,
+    loadMore: fetchNextPage,
+    shouldLoadMore: !isFetchingNextPage && !!hasNextPage,
+    count: data?.pages?.[0].items?.length ?? 0,
+  });
 
   if (status === "loading") {
     return (
@@ -104,7 +110,7 @@ const ChatMessages = ({
                 id={message.id}
                 content={message.content}
                 fileUrl={message.fileUrl}
-                deleted={type==="conversation" ? message.deleted :message.detelted }
+                deleted={type === "conversation" && message.deleted}
                 timestamp={format(new Date(message.createdAt), DATE_FORMAT)}
                 isUpdated={message.updatedAt !== message.createdAt}
                 socketQuery={socketQuery}
