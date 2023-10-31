@@ -75,7 +75,7 @@ To run this application locally, follow these steps:
 4. Run the application.
 
 ```bash
-git clone https://github.com/your-username/discord-clone.git
+git clone https://github.com/DragosMoro/discord-clone.git
 cd discord-clone
 npm install
 # Configure your environment variables
