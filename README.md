@@ -1,82 +1,84 @@
 # Discord Clone
 
-Take a look: [https://discord-clone-next-js-13.up.railway.app/](https://discord-clone-next-js-13.up.railway.app/).
+Take a look [here](https://discord-clone-next-js-13.up.railway.app/).
 
 This is a feature-rich web application that replicates the functionality of Discord. It allows users to engage in real-time messaging, share attachments, create channels, manage members, and more. The application is built with cutting-edge technologies to provide a seamless user experience.
 
 ## Features
 
-### Real-time Messaging
+1. **Real-time Messaging**
 
-- Utilizes Socket.io for real-time messaging.
-- Users can send text messages instantly.
-- Supports sending attachments as messages using UploadThing.
+    - Utilizes Socket.io for real-time messaging.
+    - Users can send text messages instantly.
+    - Supports sending attachments as messages using UploadThing.
 
-### Message Management
+    ![Real-time Messaging](https://github.com/DragosMoro/discord-clone/blob/master/public/1-1chat.png)
 
-- Allows users to delete and edit messages in real time.
-- All changes are reflected for all users in the conversation.
+2. **Message Management**
 
-### Communication Channels
+    - Allows users to delete and edit messages in real time.
+    - All changes are reflected for all users in the conversation.
 
-- Users can create text, audio, and video call channels.
-- Supports 1:1 conversations between members.
-- Enables 1:1 video calls between members.
+    ![Message Management](https://github.com/DragosMoro/discord-clone/blob/master/public/overview.png)
 
-### Member Management
+3. **Communication Channels**
 
-- Provides member management features such as kick and role change (guest/moderator).
-- Admins can efficiently manage the community.
+    - Users can create text, audio, and video call channels.
+    - Supports 1:1 conversations between members.
+    - Enables 1:1 video calls between members.
 
-### Invite System
+    ![Communication Channels](https://github.com/DragosMoro/discord-clone/blob/master/public/1-1voice.png)
 
-- Generates unique invite links for inviting new members.
-- Fully functional invite system for growing your community.
+4. **Member Management**
 
-### Message Loading
+    - Provides member management features such as kick and role change (guest/moderator).
+    - Admins can efficiently manage the community.
 
-- Implements infinite loading for messages in batches of 10.
-- Utilizes Tanstack/Query for efficient data retrieval.
+    ![Member Management](https://github.com/DragosMoro/discord-clone/blob/master/public/manage-members.png)
 
-### Server Customization
+5. **Invite System**
 
-- Allows server creation and customization to fit your community's needs.
+    - Generates unique invite links for inviting new members.
+    - Fully functional invite system for growing your community.
 
-### User Interface
+    ![Invite System](https://github.com/DragosMoro/discord-clone/blob/master/public/invite.png)
 
-- Features a beautiful UI designed with TailwindCSS and ShadcnUI.
-- Ensures full responsiveness and a mobile-friendly interface.
-- Supports both light and dark mode.
+6. **Message Loading**
 
-### Websocket Fallback
+    - Implements infinite loading for messages in batches of 10.
+    - Utilizes Tanstack/Query for efficient data retrieval.
 
-- Includes a websocket fallback mechanism using polling with alerts for reliability.
+7. **Server Customization**
 
-### Database and ORM
+    - Allows server creation and customization to fit your community's needs.
 
-- Utilizes Prisma as the ORM for database operations.
-- Stores data in a MySQL database hosted on Planetscale.
+    ![Server Customization](https://github.com/DragosMoro/discord-clone/blob/master/public/create-server.png)
 
-### Authentication
+8. **User Interface**
 
-- Implements authentication using Clerk for secure user management.
+    - Features a beautiful UI designed with TailwindCSS and ShadcnUI.
+    - Ensures full responsiveness and a mobile-friendly interface.
+    - Supports both light and dark mode.
+
+    ![User Interface Light](https://github.com/DragosMoro/discord-clone/blob/master/public/light-mode.png)
+
+9. **Websocket Fallback**
+
+    - Includes a websocket fallback mechanism using polling with alerts for reliability.
+
+
+10. **Database and ORM**
+
+    - Utilizes Prisma as the ORM for database operations.
+    - Stores data in a MySQL database hosted on Planetscale.
+
+
+11. **Authentication**
+
+    - Implements authentication using Clerk for secure user management.
+
+    ![Authentication](https://github.com/DragosMoro/discord-clone/blob/master/public/auth.png)
 
 ## Deployment
 
-The application is deployed at [https://discord-clone-next-js-13.up.railway.app/](https://discord-clone-next-js-13.up.railway.app/).
-
-## Getting Started
-
-To run this application locally, follow these steps:
-
-1. Clone this repository.
-2. Install the necessary dependencies.
-3. Configure your environment variables.
-4. Run the application.
-
-```bash
-git clone https://github.com/DragosMoro/discord-clone.git
-cd discord-clone
-npm install
-# Configure your environment variables
-npm start
+The application is deployed [here](https://discord-clone-next-js-13.up.railway.app/).
